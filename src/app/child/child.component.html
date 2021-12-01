@@ -1,0 +1,9 @@
+<div>
+  <form #todoForm (ngSubmit)="addTodo()">
+    Id : <input type="text" name="id" [(ngModel)]="todo.id" /><br />
+    task : <input type="text" name="task" [(ngModel)]="todo.task" /><br />
+    status : <input type="text" name="status" [(ngModel)]="todo.status" /><br />
+    <button type="submit">Add todo</button>
+    <button (click)="viewTodo()">View todo</button>
+  </form>
+</div>

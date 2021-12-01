@@ -1,0 +1,15 @@
+<p>parent works!</p>
+<app-child (todoAdded)="todoAdded($event)"></app-child>
+<h1>Todo List</h1>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Task</th>
+    <th>Status</th>
+  </tr>
+  <tr *ngFor="let todo of todoList">
+    <td>{{ todo.id }}</td>
+    <td>{{ todo.task }}</td>
+    <td>{{ todo.status }}</td>
+  </tr>
+</table>
